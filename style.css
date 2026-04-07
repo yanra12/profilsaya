@@ -1,0 +1,256 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header & Navigasi */
+header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0b4bc0;
+}
+
+/* Main Container */
+main {
+    flex: 1;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Bagian Judul (index.html) */
+.intro-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.intro-section h4 {
+    color: #666;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.intro-section h1 {
+    color: #0b4bc0;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.intro-section p {
+    color: #777;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Layout Grid Beranda */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+/* Kartu Biru Kiri */
+.blue-card {
+    background-color: #0b4bc0;
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(11, 75, 192, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border: 5px solid white;
+}
+
+.blue-card h2 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    color: #0b4bc0;
+}
+
+/* Kartu Kanan (Skills/Minat) */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    border-bottom: 4px solid #ccc;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-orange { border-bottom-color: #f39c12; }
+.card-teal { border-bottom-color: #1abc9c; }
+.card-blue { border-bottom-color: #2980b9; }
+.card-yellow { border-bottom-color: #f1c40f; }
+
+.skill-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.skill-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.skill-card a {
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Halaman Profil & Kontak */
+.page-title {
+    text-align: center;
+    color: #0b4bc0;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-info {
+    line-height: 1.8;
+}
+
+.profile-info h3 { margin-top: 20px; color: #0b4bc0;}
+.profile-info p { color: #555; }
+
+/* Form Kontak */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #0b4bc0;
+}
+
+.btn-submit {
+    background-color: #0b4bc0;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #08368b;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
